@@ -1,5 +1,13 @@
 name: Stephen Scott
+
 markdown: kramdown
+
 permalink: /blog/:year/:month/:day/:title
+
 gems:
   - jekyll-sitemap
+
+collections:
+icroblog:
+  output: true
+  permalink: /microblog/:year/:month/:slug/
