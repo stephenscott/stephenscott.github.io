@@ -1,13 +1,15 @@
 name: Stephen Scott
 
+include:        ["_pages"]
+
 markdown: kramdown
 
-permalink: /blog/:year/:month/:day/:title
+#permalink: /blog/:year/:month/:day/:title
 
 gems:
   - jekyll-sitemap
 
 collections:
-icroblog:
+microblog:
   output: true
   permalink: /microblog/:year/:month/:slug/

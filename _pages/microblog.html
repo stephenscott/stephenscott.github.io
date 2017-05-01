@@ -4,7 +4,7 @@ title:  Microblog
 permalink: /microblog/
 ---
 <section class="microblog-posts">
-  {% for post in site.microblog reversed %}
+  {% for post in site.categories.microblog reversed %}
     <div class="microblog-post">
       {{ post.content }}
       <footer class="microblog-post__footer">

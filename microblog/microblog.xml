@@ -3,8 +3,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <link rel="hub" href="https://pubsubhubbub.appspot.com"/>
-  <title>Tim Smith’s Microblog</title>
-  <subtitle>By Timothy B. Smith</subtitle>
+  <title>sscott Microblog</title>
+  <subtitle>By sscott</subtitle>
   <link href="https://ttimsmith.com/microblog"/>
   <link type="application/atom+xml" rel="self" href="https://ttimsmith.com/microblog.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -15,7 +15,7 @@
     <uri>https://ttimsmith.com</uri>
     <email>smith@ttimsmith.com</email>
   </author>
-  {% for post in site.microblog reversed %}
+  {% for post in site.categories.microblog reversed %}
 
   <entry>
     <id>https://ttimsmith.com{{ post.id }}</id>
